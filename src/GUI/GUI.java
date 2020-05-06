@@ -3,6 +3,7 @@ package GUI;
 
 import Listener.CodeLIstener;
 import Listener.ListLIstener;
+import ProjectViewer.ProjectViewer;
 import javafx.stage.FileChooser;
 
 import javax.swing.*;
@@ -16,12 +17,16 @@ import java.util.Vector;
 public class GUI extends JFrame {
     public static JFrame j1;//主窗口
     public static Container c1;//主窗口的容器
+    public static Container pv1,pv2,pv3,pv4,pv5,pv6;//项目管理器的容器
     public static JTextArea jt1;//写字区域
     public static JList jlt1;//代码提示窗口
+    public static JList pvl1,pvl2,pvl3,pvl4,pvl5,pvl6;//项目管理器窗口栏
     public static Vector vector1;//代码提示容器
+    public static Vector pvv1,pvv2,pvv3,pvv4,pvv5,pvv6;//项目管理器容器
     public static JMenuBar jm1;//菜单栏
     public static JMenu jmu1;//菜单容器
-    public static JMenuItem jmi1,jmi2;//俩菜单按钮
+    public static JMenuItem jmi1,jmi2,jmi3;//仨菜单按钮
+    public static JTabbedPane jp1;//项目结构
     public GUI(){
         //给主窗口设置它的属性
         j1=new JFrame("Mindustry Mod Maker");//创建新对象
@@ -34,7 +39,7 @@ public class GUI extends JFrame {
         //下拉内容的设置
         jmu1=new JMenu("选项");
         jm1.add(jmu1);
-        //俩按钮
+        //仨按钮
         jmi1=new JMenuItem("保存");//保存
         jmi1.addActionListener(new ActionListener() {
             @Override
@@ -78,10 +83,59 @@ public class GUI extends JFrame {
                 }
             }
         });
+        jmi3=new JMenuItem("打开项目");
+        jmi3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ProjectViewer pj=new ProjectViewer();
+            }
+        });
+        //
+        pv1=new Container();
+        pv2=new Container();
+        pv3=new Container();
+        pv4=new Container();
+        pv5=new Container();
+        pv6=new Container();
+        //
         jmu1.add(jmi1);
         jmu1.add(jmi2);
-
+        jmu1.add(jmi3);
         jmi2=new JMenuItem();//打开
+        //项目管理器
+        jp1=new JTabbedPane();
+        jp1.setBounds(0,300,300,300);
+        jp1.addTab("items",pv1);
+        jp1.addTab("liquids",pv2);
+        jp1.addTab("blocks",pv3);
+        jp1.addTab("mechs",pv4);
+        jp1.addTab("units",pv5);
+        jp1.addTab("scripts",pv6);
+        //
+        pvv1=new Vector();
+        pvv2=new Vector();
+        pvv3=new Vector();
+        pvv4=new Vector();
+        pvv5=new Vector();
+        pvv6=new Vector();
+        //
+        pvl1=new JList(pvv1);
+        pvl2=new JList(pvv2);
+        pvl3=new JList(pvv3);
+        pvl4=new JList(pvv4);
+        pvl5=new JList(pvv5);
+        pvl6=new JList(pvv6);
+        //
+        pv1.add(pvl1);
+        pv2.add(pvl2);
+        pv3.add(pvl3);
+        pv4.add(pvl4);
+        pv5.add(pvl5);
+        pv6.add(pvl6);
+        pvv1.add("stdd");
+        pvl1.setListData(pvv1);
+
+        c1.add(jp1);
         // 给写字的地方设置属性
         jt1=new JTextArea();
         jt1.setBounds(325,25,750,700);
