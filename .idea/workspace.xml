@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0399c492-1922-451e-87db-a37be3ac2ee4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Listener/CodeLIstener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listener/CodeLIstener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,12 +58,24 @@
       <updated>1588726460350</updated>
       <workItem from="1588726462739" duration="6879000" />
       <workItem from="1588742212253" duration="1137000" />
-      <workItem from="1588746553190" duration="1741000" />
+      <workItem from="1588746553190" duration="2099000" />
     </task>
+    <task id="LOCAL-00001" summary="Add more code">
+      <created>1588748353221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588748353221</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add more code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1588729842898">
@@ -75,22 +86,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="399" y="51" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588748343184" />
-    <state width="1865" height="270" key="GridCell.Tab.0.bottom" timestamp="1588743757044">
+    <state width="1865" height="270" key="GridCell.Tab.0.bottom" timestamp="1588748637915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588743757044" />
-    <state width="1865" height="270" key="GridCell.Tab.0.center" timestamp="1588743757044">
+    <state width="1865" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588748637915" />
+    <state width="1865" height="270" key="GridCell.Tab.0.center" timestamp="1588748637915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588743757044" />
-    <state width="1865" height="270" key="GridCell.Tab.0.left" timestamp="1588743757044">
+    <state width="1865" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588748637915" />
+    <state width="1865" height="270" key="GridCell.Tab.0.left" timestamp="1588748637914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588743757044" />
-    <state width="1865" height="270" key="GridCell.Tab.0.right" timestamp="1588743757044">
+    <state width="1865" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588748637914" />
+    <state width="1865" height="270" key="GridCell.Tab.0.right" timestamp="1588748637915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588743757044" />
+    <state width="1865" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588748637915" />
     <state x="463" y="157" key="SettingsEditor" timestamp="1588727985727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
