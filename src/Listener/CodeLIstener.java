@@ -82,8 +82,6 @@ public class CodeLIstener implements KeyListener {
             GUI.vector1.add("\"consumes\"");
             GUI.vector1.add("\"category\"");
             GUI.vector1.add("\"crafting\"");
-
-
             GUI.jlt1.setListData(GUI.vector1);
         }
     }
