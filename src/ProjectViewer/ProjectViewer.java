@@ -39,10 +39,47 @@ public class ProjectViewer {
                 mechFile=new File(mechString);
                 scriptFile=new File(scriptString);
                 unitFile=new File(unitString);
+                //
                 String[]name=itemFile.list();
                 assert name != null;
-                for(int x = 0; x<=name.length; x++){
-                   GUI.jt1.append(name[x]);
+                for(int x = 0; x<name.length; x++){
+                   GUI.pvv1.add(name[x]);
+                   GUI.pvl1.setListData(GUI.pvv1);
+                }
+                //
+                String[]name1=liquidFile.list();
+                assert name1 != null;
+                for(int x = 0; x<name1.length; x++){
+                    GUI.pvv2.add(name1[x]);
+                    GUI.pvl2.setListData(GUI.pvv2);
+                }
+                //
+                String[]name2=blockFile.list();
+                assert name2 != null;
+                for(int x = 0; x<name2.length; x++){
+                    GUI.pvv3.add(name2[x]);
+                    GUI.pvl3.setListData(GUI.pvv3);
+                }
+                //
+                String[]name3=mechFile.list();
+                assert name3 != null;
+                for(int x = 0; x<name3.length; x++){
+                    GUI.pvv4.add(name3[x]);
+                    GUI.pvl4.setListData(GUI.pvv4);
+                }
+                //
+                String[]name4=unitFile.list();
+                assert name4 != null;
+                for(int x = 0; x<name4.length; x++){
+                    GUI.pvv5.add(name4[x]);
+                    GUI.pvl5.setListData(GUI.pvv5);
+                }
+                //
+                String[]name5=scriptFile.list();
+                assert name5 != null;
+                for(int x = 0; x<name5.length; x++){
+                    GUI.pvv6.add(name5[x]);
+                    GUI.pvl6.setListData(GUI.pvv6);
                 }
 
 

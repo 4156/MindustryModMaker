@@ -1,8 +1,7 @@
 //傻瓜理解版
 package GUI;
 
-import Listener.CodeLIstener;
-import Listener.ListLIstener;
+import Listener.*;
 import ProjectViewer.ProjectViewer;
 import javafx.stage.FileChooser;
 
@@ -120,11 +119,23 @@ public class GUI extends JFrame {
         pvv6=new Vector();
         //
         pvl1=new JList(pvv1);
+        pvl1.setSize(300,300);
+        pvl1.addListSelectionListener(new ItemProjectListener());
         pvl2=new JList(pvv2);
+        pvl2.setSize(300,300);
+        pvl2.addListSelectionListener(new LiquidProjectListener());
         pvl3=new JList(pvv3);
+        pvl3.setSize(300,300);
+        pvl3.addListSelectionListener(new BlockProjectListener());
         pvl4=new JList(pvv4);
+        pvl4.setSize(300,300);
+        pvl4.addListSelectionListener(new MechProjectListener());
         pvl5=new JList(pvv5);
+        pvl5.setSize(300,300);
+        pvl5.addListSelectionListener(new UnitProjectListener());
         pvl6=new JList(pvv6);
+        pvl6.setSize(300,300);
+        pvl6.addListSelectionListener(new ScriptProjectListener());
         //
         pv1.add(pvl1);
         pv2.add(pvl2);
@@ -132,8 +143,8 @@ public class GUI extends JFrame {
         pv4.add(pvl4);
         pv5.add(pvl5);
         pv6.add(pvl6);
-        pvv1.add("stdd");
-        pvl1.setListData(pvv1);
+
+
 
         c1.add(jp1);
         // 给写字的地方设置属性
