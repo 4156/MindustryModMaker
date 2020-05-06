@@ -19,8 +19,9 @@ public class CodeLIstener implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-
-
+        GUI.vector1.clear();
+        GUI.jlt1.setListData(GUI.vector1);
+        
         if(e.getKeyCode() == KeyEvent.VK_N) {
             GUI.vector1.add("\"name\"");
             GUI.jlt1.setListData(GUI.vector1);
