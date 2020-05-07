@@ -9,8 +9,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class ProjectViewer {
-    static public String fileString, jsonString, itemString, liquidString, blockString, mechString, unitString, scriptString;
-    static public File itemFile,blockFile,liquidFile,mechFile,scriptFile,unitFile;
+    static public String fileString, jsonString, itemString, liquidString, blockString, mechString, unitString, scriptString,itemSpriteString,spriteString;
+    static public File itemFile,blockFile,liquidFile,mechFile,scriptFile,unitFile,spriteFile,itemSpriteFile,blockSpriteFile,liquidSpriteFile,mechSpriteFile,unitSpriteFile;
     boolean can;
     public ProjectViewer() {
         JFileChooser jfc = new JFileChooser();
@@ -20,6 +20,7 @@ public class ProjectViewer {
             File file=jfc.getSelectedFile();
             jsonString=file.getPath()+"\\mod.json";
             fileString=file.getPath();
+            spriteString=file.getPath()+"\\sprites";
             File mod =new File(jsonString);
             if(mod.exists()){
                 System.out.println(mod.getPath());
@@ -33,12 +34,21 @@ public class ProjectViewer {
                 mechString=content.getPath()+"\\mechs";
                 unitString=content.getPath()+"\\units";
                 scriptString=file.getPath()+"\\scripts";
+                //
                 itemFile=new File(itemString);
                 blockFile=new File(blockString);
                 liquidFile=new File(liquidString);
                 mechFile=new File(mechString);
                 scriptFile=new File(scriptString);
                 unitFile=new File(unitString);
+                spriteFile=new File(spriteString);
+                //
+                itemSpriteFile=new File(spriteString+"\\items");
+                blockSpriteFile=new File(spriteString+"\\blocks");
+                liquidSpriteFile=new File(spriteString+"\\liquids");
+                mechSpriteFile=new File(spriteString+"\\mechs");
+                unitSpriteFile=new File(spriteString+"\\units");
+                spriteFile=new File(spriteString);
                 //
                 String[]name=itemFile.list();
                 assert name != null;

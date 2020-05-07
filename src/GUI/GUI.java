@@ -2,15 +2,14 @@
 package GUI;
 
 import Listener.*;
-import ProjectViewer.ProjectViewer;
-import javafx.stage.FileChooser;
+import ProjectViewer.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
-import java.nio.Buffer;
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class GUI extends JFrame {
@@ -24,7 +23,7 @@ public class GUI extends JFrame {
     public static Vector pvv1,pvv2,pvv3,pvv4,pvv5,pvv6;//项目管理器容器
     public static JMenuBar jm1;//菜单栏
     public static JMenu jmu1;//菜单容器
-    public static JMenuItem jmi1,jmi2,jmi3;//仨菜单按钮
+    public static JMenuItem jmi1,jmi2,jmi3,jmi4;//仨菜单按钮
     public static JTabbedPane jp1;//项目结构
     public GUI(){
         //给主窗口设置它的属性
@@ -89,6 +88,14 @@ public class GUI extends JFrame {
                 ProjectViewer pj=new ProjectViewer();
             }
         });
+        jmi4=new JMenuItem("项目管理器");
+        jmi4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ProjectManagement pj=new ProjectManagement("项目管理器");
+            }
+        });
+
         //
         pv1=new Container();
         pv2=new Container();
@@ -100,6 +107,7 @@ public class GUI extends JFrame {
         jmu1.add(jmi1);
         jmu1.add(jmi2);
         jmu1.add(jmi3);
+        jmu1.add(jmi4);
         jmi2=new JMenuItem();//打开
         //项目管理器
         jp1=new JTabbedPane();
@@ -159,6 +167,9 @@ public class GUI extends JFrame {
         jlt1.addListSelectionListener(new ListLIstener());
         jlt1.setBounds(0,0,300,300);
         c1.add(jlt1);
+
+
+
         j1.setJMenuBar(jm1);
         j1.setVisible(true);//主窗口是否可见(放在最后免得刷新)
 

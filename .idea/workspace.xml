@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0399c492-1922-451e-87db-a37be3ac2ee4" name="Default Changelist" comment="Add more code">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/GUI/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/ProjectViewer/ProjectViewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mindustry Mod Maker/ProjectViewer/ProjectViewer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectViewer/ProjectViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectViewer/ProjectViewer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +66,8 @@
       <workItem from="1588742212253" duration="1137000" />
       <workItem from="1588746553190" duration="11432000" />
       <workItem from="1588760136409" duration="948000" />
-      <workItem from="1588764855567" duration="1921000" />
+      <workItem from="1588764855567" duration="2323000" />
+      <workItem from="1588817538269" duration="19383000" />
     </task>
     <task id="LOCAL-00001" summary="Add more code">
       <created>1588748353221</created>
@@ -112,34 +108,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588760562975" />
-    <state x="399" y="51" key="CommitChangelistDialog2" timestamp="1588755184081">
+    <state x="726" y="394" width="468" height="260" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588829746526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="399" y="51" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588755184081" />
-    <state width="1865" height="380" key="GridCell.Tab.0.bottom" timestamp="1588766615867">
+    <state x="726" y="394" width="468" height="260" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1588829746526" />
+    <state x="627" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588827925422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588766615867" />
-    <state width="1865" height="380" key="GridCell.Tab.0.center" timestamp="1588766615867">
+    <state x="627" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588827925422" />
+    <state x="399" y="51" key="CommitChangelistDialog2" timestamp="1588834767682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="380" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588766615867" />
-    <state width="1865" height="380" key="GridCell.Tab.0.left" timestamp="1588766615867">
+    <state x="399" y="51" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588834767682" />
+    <state width="1865" height="145" key="GridCell.Tab.0.bottom" timestamp="1588837454375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="380" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588766615867" />
-    <state width="1865" height="380" key="GridCell.Tab.0.right" timestamp="1588766615867">
+    <state width="1865" height="145" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588837454375" />
+    <state width="1865" height="145" key="GridCell.Tab.0.center" timestamp="1588837454374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="380" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588766615867" />
+    <state width="1865" height="145" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588837454374" />
+    <state width="1865" height="145" key="GridCell.Tab.0.left" timestamp="1588837454374">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="145" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588837454374" />
+    <state width="1865" height="145" key="GridCell.Tab.0.right" timestamp="1588837454374">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="145" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588837454374" />
     <state x="243" y="87" key="SettingsEditor" timestamp="1588764899392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="243" y="87" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588764899392" />
-    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1588764855489">
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1588817539937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588764855489" />
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588817539937" />
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1588752242142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
